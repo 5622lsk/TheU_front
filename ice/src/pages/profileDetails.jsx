@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../wood.css';
 
-const Profiledetails = () => {
+const ProfileDetails = () => {
   const [nameOrNickname, setNameOrNickname] = useState('');
   const [password, setPassword] = useState('');
   const [intro, setIntro] = useState('');
+  const navigate = useNavigate();
 
-  // ... 여기에 form 제출 핸들러를 추가할 수 있습니다.
+  const handleNext = () => {
+    // 입력 데이터를 처리하고 이동합니다.
+    // 여기에서 추가 데이터 처리나 검증을 수행할 수 있습니다.
+    navigate('/profile-details2', { state: { nameOrNickname, password, intro } });
+  };
 
   return (
-    <div className="profile-details-container">
-      <form className="profile-details-form">
-        <div className="form-group">
+    <div className="profile-setup-container">
+      <form className="profile-setup-form">
+      <div className="form-group">
           <label>이름/닉네임:</label>
           <input
             className="form-input"
@@ -30,7 +36,7 @@ const Profiledetails = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <div className="form-group2">
+        <div className="form-group">
           <label>한줄 소개:</label>
           <input
             className="form-input"
@@ -39,9 +45,12 @@ const Profiledetails = () => {
             onChange={(e) => setIntro(e.target.value)}
           />
         </div>
+        <button type="button" onClick={handleNext} className="form-submit-button">
+          다음
+        </button>
       </form>
     </div>
   );
 };
 
-export default Profiledetails;
+export default ProfileDetails;

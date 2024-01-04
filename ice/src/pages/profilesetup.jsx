@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../wood.css'
@@ -12,11 +13,12 @@ const ProfileSetup = () => {
   const [questions, setQuestions] = useState([]);
   const [newQuestion, setNewQuestion] = useState('');
   const navigate = useNavigate();
-
+  
   // 폼 제출 핸들러
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({
+ 
+    console.log(
       roomInfo,
       subTitle,
       meetDate,
@@ -24,7 +26,7 @@ const ProfileSetup = () => {
       password,
       intro,
       questions,
-    });
+    );
     // 서버로 데이터를 보내는 로직을 여기에 추가
   };
   // 새 질문을 추가하는 핸들러
@@ -83,6 +85,7 @@ const ProfileSetup = () => {
             type="text" placeholder='이름/닉네임'
             value={nameOrNickname}
             onChange={(e) => setNameOrNickname(e.target.value)}
+            readOnly
           />
         </div>
         <div className="form-group">
@@ -92,8 +95,9 @@ const ProfileSetup = () => {
             maxLength="4"
             value={password}
             onChange={(e) => setPassword(e.target.value.replace(/[^0-9]/g, ''))}
+            readOnly
           />
-        </div >
+        </div>
         <div className="form-group">
           <input
             type="text"
@@ -101,6 +105,7 @@ const ProfileSetup = () => {
             value={intro}
             onChange={(e) => setIntro(e.target.value)}
             className="form-input"
+            readOnly
           />
         </div>
         </div>
