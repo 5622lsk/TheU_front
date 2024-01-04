@@ -1,11 +1,18 @@
-import './App.css';
-
-function App() {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainPage from './pages/mainpage';
+import ProfileSetup from './pages/profilesetup'; // ProfileSetup 컴포넌트 임포트
+import Profiledetails from './pages/profileDetails'
+const App = () => {
   return (
-    <div className="App">
-
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/profile-setup" element={<ProfileSetup />} /> // ProfileSetup 컴포넌트에 대한 라우트 추가
+        <Route path="/profile-details" element={<Profiledetails />} /> 
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
