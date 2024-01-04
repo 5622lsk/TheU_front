@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../wood.css'
@@ -83,6 +84,7 @@ const ProfileSetup = () => {
             type="text" placeholder='이름/닉네임'
             value={nameOrNickname}
             onChange={(e) => setNameOrNickname(e.target.value)}
+            readOnly
           />
         </div>
         <div className="form-group">
@@ -92,8 +94,9 @@ const ProfileSetup = () => {
             maxLength="4"
             value={password}
             onChange={(e) => setPassword(e.target.value.replace(/[^0-9]/g, ''))}
+            readOnly
           />
-        </div >
+        </div>
         <div className="form-group">
           <input
             type="text"
@@ -101,6 +104,7 @@ const ProfileSetup = () => {
             value={intro}
             onChange={(e) => setIntro(e.target.value)}
             className="form-input"
+            readOnly
           />
         </div>
         </div>
