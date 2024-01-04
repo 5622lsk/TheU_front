@@ -13,11 +13,12 @@ const ProfileSetup = () => {
   const [questions, setQuestions] = useState([]);
   const [newQuestion, setNewQuestion] = useState('');
   const navigate = useNavigate();
-
+  
   // 폼 제출 핸들러
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({
+ 
+    console.log(
       roomInfo,
       subTitle,
       meetDate,
@@ -25,7 +26,7 @@ const ProfileSetup = () => {
       password,
       intro,
       questions,
-    });
+    );
     // 서버로 데이터를 보내는 로직을 여기에 추가
   };
   // 새 질문을 추가하는 핸들러

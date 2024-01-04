@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/" element={<MainPage />} />
         <Route path="/profile-setup" element={<ProfileSetup />} /> // ProfileSetup 컴포넌트에 대한 라우트 추가
         <Route path="/profile-details" element={<Profiledetails />} /> 
-        <Route path="/room" element={<Room />} />
+        <Route path="/room" element={<Room />} /> 
       </Routes>
     </Router>
   );
