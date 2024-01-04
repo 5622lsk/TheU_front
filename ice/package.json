@@ -15,12 +15,6 @@
     "styled-components": "^6.1.6",
 
     "react-router-dom": "^6.21.1",
-<<<<<<< HEAD
-    "react-scripts": "^5.0.1",
-    "styled-components": "^6.1.6",
-=======
-
->>>>>>> 723d910406865fb776081c3bf2328960514588c2
     "web-vitals": "^2.1.4"
   },
   "scripts": {
