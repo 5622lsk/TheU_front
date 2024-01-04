@@ -19,13 +19,13 @@ export default function Stepstack() {
     <div>
       {showButtons && (
         <>
-          <button style={{border:"none"}} className='Aq' onClick={() => handleLinkClick('/Aq')}>
+          <button style={{border:"none"}} className='Aq' onClick={() => handleLinkClick('/step-page/Aq')}>
           </button>
-          <button style={{border:"none"}} className='step1' onClick={() => handleLinkClick('/step-1')}>
+          <button style={{border:"none"}} className='step1' onClick={() => handleLinkClick('/step-page/step-1')}>
           </button>
-          <button style={{border:"none"}} className='step2' onClick={() => handleLinkClick('/step-2')}>
+          <button style={{border:"none"}} className='step2' onClick={() => handleLinkClick('/step-page/step-2')}>
           </button>
-          <button style={{border:"none"}} className='step3' onClick={() => handleLinkClick('/step-3')}>
+          <button style={{border:"none"}} className='step3' onClick={() => handleLinkClick('/step-page/step-3')}>
           </button>
         </>
       )}

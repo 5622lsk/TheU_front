@@ -5,8 +5,7 @@ export default function Step1() {
 
     return(
         <div>
-            안녕하세요
+            step 1 page
         </div>
     )
-
 }

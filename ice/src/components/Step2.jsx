@@ -3,8 +3,8 @@ import "../jun.css";
 export default function Step2() {
 
     return(
-        <div className='step2'>
-            
+        <div>
+            step 2 page
         </div>
     )
 
