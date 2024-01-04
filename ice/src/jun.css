@@ -1,0 +1,101 @@
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding : 0;
+}
+.step-container {
+    padding: 5vh 10px 15vh 10px;
+    border: solid #3a3a3a 1px;
+    background-color: #3A3A3a;
+    height : 79.6vh;
+}
+
+.step1 {
+    width: 354px;
+    height:152px;
+    background-image: url("/Users/jangjunseo/Desktop/Myapp/Front/ice/src/Mask group.png");
+    background-repeat: no-repeat;
+    margin : 10px;
+    border-radius: 10px;
+    padding: 7px 10px 7px 10px;
+}
+
+.step2 {
+    width: 354px;
+    height:152px;
+    background-image: url("/Users/jangjunseo/Desktop/Myapp/Front/ice/src/Mask group2.png");
+    background-repeat: no-repeat;
+    margin : 10px;
+    border-radius: 10px;
+    padding: 7px 10px 7px 10px;
+}
+
+.step3 {
+    width: 354px;
+    height:152px;
+    background-image: url("/Users/jangjunseo/Desktop/Myapp/Front/ice/src/Mask group3.png");
+    background-repeat: no-repeat;
+    margin : 10px;
+    border-radius: 10px;
+    padding: 7px 10px 7px 10px;
+}
+
+.Aq {
+    background-image: url("/Users/jangjunseo/Desktop/Myapp/Front/ice/src/quest.png");
+    width: 354px;
+    height: 36px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.SubT {
+    color: white;
+    font-weight: bold;
+    font-size:larger;
+}
+
+.MainT { 
+    color: gray;
+}
+
+.Title-Container {
+    margin : 10px;
+    display: inline-block;
+}
+
+.Upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Switch {
+    background-image: url("/Users/jangjunseo/Desktop/Myapp/Front/ice/src/3user.png");
+    width: 59.905px;
+    height: 34px;
+    color : white;
+    margin: 10px;
+    display: inline-block;
+    align-items: center;
+}
+
+.Dday {
+    color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: large;
+}
+
+.btn {
+    width: 353px;
+    height: 40px;
+    border-radius: 10px;
+    background: #FF3030;
+    border: none;
+    color: white;
+    margin: 10px;
+    font-size: larger;
+}
